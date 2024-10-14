@@ -37,7 +37,14 @@ const teamMembers = [
   }
 ];
 
+const teamEl = document.getElementById("team");
 
+for (let i = 0; i < teamMembers.length; i++) {
+  const member = teamMembers[i];
+  console.log(member);
+  
+  
+}
 
 
 
