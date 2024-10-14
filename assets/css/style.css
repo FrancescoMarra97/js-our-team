@@ -1,0 +1,17 @@
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; 
+    color: #ff4081; 
+  }
+  .team-member-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; /* peso più marcato per il nome */
+    color: #ffffff;
+  }
+  
+  .team-member-role,
+  .team-member-email {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; /* peso normale per i ruoli e l'email */
+    color: #00c9ff;
+  }
