@@ -43,6 +43,9 @@ for (let i = 0; i < teamMembers.length; i++) {
   const member = teamMembers[i];
   console.log(member);
   
+  const markup = generateTeamMember(member);
+  console.log(markup);
+  
   
 }
 
@@ -57,18 +60,20 @@ for (let i = 0; i < teamMembers.length; i++) {
 
 
 function generateTeamMember(member) {
+  const {image, name, role, email} = member;
+
   return `
     <div  class="col-md-4">
                     <div class="card text-bg-dark mb-3" style="max-width: 540px;">
                         <div class="row g-0">
                           <div class="col-md-4">
-                            <img src="./assets/img/male1.png" class="img-fluid rounded-start" alt="...">
+                            <img src="${image}" class="img-fluid rounded-start" alt="...">
                           </div>
                           <div class="col-md-8">
                             <div class="card-body">
-                                <h5 id="name" class="card-title">Marco Bianchi</h5>
-                                <p id="role" class="card-text mb-1">Designer</p>
-                                <a href="#"><p id="email" class="card-text">marcobianchi@team.com</p></a>
+                                <h5 id="name" class="card-title">${name}</h5>
+                                <p id="role" class="card-text mb-1">${role}</p>
+                                <a href="#"><p id="email" class="card-text">${email}</p></a>
                             </div>
                           </div>
                         </div>
